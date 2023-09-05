@@ -34,7 +34,7 @@
     padding: 13px;
     padding-bottom: 20px;
     background-color: white;
-    height: 200px;
+    height: 230px;
   }
   
   .contact-card > img {
@@ -46,6 +46,7 @@
   }
   .pet-info{
     margin: auto;
+    margin-top: 10%;
   }
   .contact-card > h3 {
     font-weight: 700;

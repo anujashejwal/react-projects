@@ -17,8 +17,8 @@
 .link-cards{
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
-    gap: 10%;
+    flex-wrap: wrap;
+    gap: 5%;
     margin: 50px;
     /* border:1px solid #F9D949; */
 }
@@ -26,13 +26,14 @@
     font-size: 1.5rem;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     font-weight: 400;
-    margin: 50px !important;
     text-align: center;
+    
 }
 .title-page-cards{
     /* background: linear-gradient(90deg, rgba(208,165,22,1) 46%, rgba(245,210,52,1) 89%); */
     background-color: #272829 !important;
-    border: 1px solid #F9D949;
+    border: 1.5px solid #F9D949;
     border-radius :15px !important;
+    margin-bottom: 5%;
 }
   

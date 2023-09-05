@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #FF7C43;
+    color: white; */
+    margin: 0;
+}
+
+
+.window-tracker-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FF7C43;
+    color: white;
+    height: 100vh;
+}
+
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    cursor: pointer;
+    margin: 2%;
+}
+
+.window-tracker-h1{
+    text-align: center;
+    margin: 2%;
+}
+.window-tracker-h3{
+    margin: 2%;
+    text-align: center;
+}

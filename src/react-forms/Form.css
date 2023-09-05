@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    /* padding: 20px; */
+}
+.react-forms-page{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.react-form-text, .react-form-email {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    height: 30px;
+    text-indent: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    display: block;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 0.75rem;
+}
+
+textarea {
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    display: block;
+    
+}
+.react-form-button{
+    background-color: #131313;
+    color: white;
+    border-radius: 5px;
+}

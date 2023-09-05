@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+.jokespage{
+    background-color: #181823;   
+    
+}
+.jokes-display{
+    margin:1%;
+    margin-top: 0;
+}
+.jokes-setup{
+    margin-bottom: 1%;
+    padding-top:1%;
+    text-align: center;
+    color: white;
+}
+.jokes-punchline{
+    text-align: center;
+    margin-bottom: 1%;
+    color: white;
+}
+.jokes-button{
+    
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 1%;
+    
+}
+
+    

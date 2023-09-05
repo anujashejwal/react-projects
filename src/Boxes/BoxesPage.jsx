@@ -7,16 +7,34 @@ export default function BoxesPage() {
     const [squares, setSquares] = React.useState(boxdata)
     
     function toggle(id) {
-        /**
-         * Challenge: use setSquares to update the
-         * correct square in the array.
-         * 
-         * Make sure not to directly modify state!
-         * 
-         * Hint: look back at the lesson on updating arrays
-         * in state if you need a reminder on how to do this
-         */
-    }
+    //IMPERATIVE METHOD
+    // setSquares(prevSquares=>{
+    //     const newSquares=[]
+    //     for (let i=0;i<prevSquares.length;i++){
+    //         const currentSquare=prevSquares[i]
+    //         if(currentSquare.id===id){
+    //             const updatedSquare={
+    //                 ...currentSquare,
+    //                 on:!currentSquare.on
+    //             }
+    //             newSquares.push(updatedSquare)
+    //         }
+    //         else{
+    //             newSquares.push(currentSquare)
+    //         }
+    //     }
+    //     return newSquares
+
+    // })
+
+    //DECLARATIVE METHOD
+    setSquares(prevSquares => {
+        return prevSquares.map((square) => {
+            return square.id === id ? {...square, on: !square.on} : square
+        })
+    })
+}
+
     
     const squareElements = squares.map(square => (
         <Box 
@@ -29,7 +47,6 @@ export default function BoxesPage() {
     
     return (
         <main>
-            
             {squareElements}
         </main>
     )
