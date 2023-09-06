@@ -2,13 +2,15 @@
     margin: 0;
 }
 .title-page{
-    background-color:#272829;
+    /* background-color:#272829; */
+    background-color: white;
     height: 100vh;
     font-family: Inter, sans-serif;
     margin: 0;
 }
 .title-head{
-    color: #F9D949;
+    /* color: #F9D949; */
+    color:#116D6E;
     text-align: center;
     padding: 90px;
     padding-bottom: 50px;
@@ -31,9 +33,86 @@
 }
 .title-page-cards{
     /* background: linear-gradient(90deg, rgba(208,165,22,1) 46%, rgba(245,210,52,1) 89%); */
-    background-color: #272829 !important;
-    border: 1.5px solid #F9D949;
+    /* background-color: #272829 !important; */
+    background-color: white !important;
+    /* border: 1.5px solid #F9D949; */
+    border: 1.5px solid #116D6E;
     border-radius :15px !important;
     margin-bottom: 5%;
 }
-  
+
+
+.toggler {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.toggler p {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.toggler--slider {
+    width: 35px;
+    height: 18px;
+    background-color: black;
+    border-radius: 2rem;
+    margin-inline: 7px;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid black;
+    padding-right: 2px;
+    box-sizing: content-box;
+}
+
+nav.dark .toggler--slider {
+    border-color: black;
+    background-color: black;
+}
+
+.toggler--slider--circle {
+    height: 13px;
+    width: 13px;
+    background-color:white;
+    border-radius: 50%; 
+    margin-left: 2px;
+}
+
+nav.dark .toggler--slider--circle {
+    background-color: #FFFFFF;
+}
+
+.toggler--dark {
+    color: #ABA8A8;
+}
+
+nav.dark .toggler--dark {
+    color: black;
+}
+
+.toggler--dark {
+    color: #ABA8A8;
+    padding: 10px;
+}
+
+nav.dark .toggler-dark {
+    color: #272829;
+}
+
+nav.dark .toggler--slider {
+    justify-content: flex-end;
+}
+
+.title-page-main.dark {
+    /* background-image: url("./images/react-icon-dark.png");  */
+    background-image: url("../../public/images/react-icon-dark.png");
+    background-color: white;
+    color: #116D6E;    
+}
+.title-page-main.dark .title-page{
+    background-color: white;
+}
