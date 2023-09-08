@@ -8,14 +8,14 @@ import BoxesPage from "./Boxes/BoxesPage";
 import JokesPage from "./Setup-Punchlines/JokesPage";
 import FormPage from "./react-forms/FormPage";
 import WindowTrackerPage from "./Window-Tracker/WindowTrackerPage";
-import TitlePageMain from "./Title/TitlePageMain";
+import InfoSitePage from "./info-site/InfoSitePage";
 
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<TitlePageMain/>} />
+        <Route exact path="/" element={<TitlePage/>} />
         <Route path="/meme-generator" element={<MemePage/>} />
         <Route path="/airbnb-clone" element={<AirbnbPage/>}/>
         <Route path="/pets-props" element={<PetsPage/>}/>
@@ -23,6 +23,7 @@ function App() {
         <Route path="/setup-punchlines" element={<JokesPage/>}/>
         <Route path="/react-forms" element={<FormPage/>}/>
         <Route path="/window-tracker" element={<WindowTrackerPage/>}/>
+        <Route path="/info-site" element={<InfoSitePage/>}/>
       </Routes>
     </Router>
   );
